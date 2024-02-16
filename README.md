@@ -81,3 +81,15 @@ as your system engine. If you have already installed docker, skip this step to n
    <br />
 5. After Initializing Environment, Running Airflow by run command  <br />
    ```docker compose up```
+   
+## Output
+In Postgresql, I create table with collect products information <br />
+- category : product category such as meat, water etc.
+- product : product name.
+- brand : product brand name such as samsung.
+- price_per_unit : price per 1 unit in THB.
+- unit : sale unit such as kg.
+- store : store name (BigC, Makro).
+- time_stamp : time stamp when data was ingested. <br />
+Here's sample output.
+
