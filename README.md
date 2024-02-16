@@ -24,6 +24,10 @@ I choose website data for this assignment 2 websites <br />
 4. Vizualize by uisng Tableau to direct connect to Postgresql Database.
 <br />
 
+### DAG TASK
+In Airflow DAG [my_pipeline.py](https://github.com/pwtnew32/assignment_bigc/blob/main/airflow/dags/my_pipeline.py)  <br />
+<br />
+
 ### Deployment
 This workflow apply Apache Airflow by running on Docker.
 1. If your PC or Vm Instance have not installed docker, Install docker as this link : https://docs.docker.com/engine/install/  <br />
