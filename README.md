@@ -29,9 +29,9 @@ In Airflow DAG [my_pipeline.py](https://github.com/pwtnew32/assignment_bigc/blob
 #### task 1 : get_data_from_bigc_and_makro
    This task use BeautifulSoup4 to extract elements from 2 website and use Pandas to transfrom elements to DataFrame. <br />
 #### task 2 : load_to_db
-   This task use Sqlalchemy to load data from DataFrame to Postgresql Database. <br />
-![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png) <br />
-<br />
+   This task use Sqlalchemy to load data from DataFrame to Postgresql Database. <br /><br />
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/airflow_dag_task.png) <br />
+
 
 ### Deployment
 This workflow apply Apache Airflow by running on Docker.
