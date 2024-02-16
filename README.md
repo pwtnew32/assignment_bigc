@@ -4,9 +4,11 @@ From this assignment.<br />
 I choose website data for this assignment 2 websites <br />
 1. BigC (link : https://www.bigc.co.th/) <br />
 2. Makro (link : https://www.makro.pro/) <br />
+
+## Workflow 
 <br />
-## Workflow <br />
-![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png) <br />
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png)<br />
+
 ### Tools
 - BeautifulSoup4
 - Pandas
@@ -14,7 +16,7 @@ I choose website data for this assignment 2 websites <br />
 - Docker
 - Airflow
 - Postgresql
-<br />
+
 ### Workflow step
 1. Extract Data from BigC and Makro website by using BeautifulSoup4 library to get elements of product. <br />
 2. Transform product elements to DataFrame by using pandas library. <br />
