@@ -1,7 +1,9 @@
 import requests
+from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import pandas as pd
 import importlib
+import re
 
 def get_data_bigc(list_url):
   list_df = []
@@ -62,6 +64,8 @@ def get_data_bigc(list_url):
 
             df['price_per_unit'] = [price]
             df['unit'] = [unit]
+            # replace blank unit
+            df['unit'].replace(to_replace=[''], value='แพ็ค', inplace=True)
             df['store'] = ['BigC']
             df['time_stamp'] = [datetime.now().strftime("%Y-%m-%d %H:%M:%S")]
             all_df.append(df)

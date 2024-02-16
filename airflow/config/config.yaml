@@ -1,0 +1,8 @@
+connections:
+  postgresql_connection:
+    host: 'postgres'
+    port: '5432'
+    database_name : 'airflow'
+    schema : 'warehouse'
+    username: 'airflow'
+    password: 'airflow'
