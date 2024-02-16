@@ -6,8 +6,8 @@ I choose website data for this assignment 2 websites <br />
 2. Makro (link : https://www.makro.pro/) <br />
 
 ## Workflow 
-<br />
-![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png)<br />
+
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png) <br />
 
 ### Tools
 - BeautifulSoup4
