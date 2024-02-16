@@ -1,12 +1,12 @@
 # assignment_bigc
 From this assignment.<br />
-pigture here.. <br />
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/assignment.png) <br />
 I choose website data for this assignment 2 websites <br />
 1.BigC (link : https://www.bigc.co.th/) <br />
 2.Makro (link : https://www.makro.pro/) <br />
 <br />
 ## Workflow
-pigture here.. <br />
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png) <br />
 ### Tools
 - BeautifulSoup4
 - Pandas
