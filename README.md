@@ -90,6 +90,6 @@ In Postgresql, I create table with collect products information <br />
 - price_per_unit : price per 1 unit in THB.
 - unit : sale unit such as kg.
 - store : store name (BigC, Makro).
-- time_stamp : time stamp when data was ingested. <br />
-Here's sample output.
-
+- time_stamp : time stamp when data was ingested. <br /> <br />
+#### Here's sample output.  <br />
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/sample_output.png) <br />
