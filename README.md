@@ -44,7 +44,7 @@ as your system engine. If you have already installed docker, skip this step to n
       # run pip install
       RUN pip install --requirement /requirement.txt
      ```
-   - ```requirement.txt``` with list python libraries neeed to build custom airflow image because some python libraries were not installed in airflow image.<br />
+   - ```requirement.txt``` with list python libraries need to build custom airflow image because some python libraries were not installed in airflow image.<br />
       ```
       minio==7.1.10
       pysftp==0.2.9
@@ -75,6 +75,9 @@ as your system engine. If you have already installed docker, skip this step to n
    AIRFLOW_UID=50000
    ```
    - Initialize the database
-   ```docker compose up airflow-init```  <br /> <br />
+   ```
+   docker compose up airflow-init
+   ```
+   <br />
 5. After Initializing Environment, Running Airflow by run command  <br />
    ```docker compose up```
