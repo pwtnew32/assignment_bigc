@@ -24,8 +24,13 @@ I choose website data for this assignment 2 websites <br />
 4. Vizualize by uisng Tableau to direct connect to Postgresql Database.
 <br />
 
-### DAG TASK
-In Airflow DAG [my_pipeline.py](https://github.com/pwtnew32/assignment_bigc/blob/main/airflow/dags/my_pipeline.py)  <br />
+### AIRFLOW DAG TASK
+In Airflow DAG [my_pipeline.py](https://github.com/pwtnew32/assignment_bigc/blob/main/airflow/dags/my_pipeline.py) , There are 2 tasks.  <br />
+#### task 1 : get_data_from_bigc_and_makro
+   This task use BeautifulSoup4 to extract elements from 2 website and use Pandas to transfrom elements to DataFrame. <br />
+#### task 2 : load_to_db
+   This task use Sqlalchemy to load data from DataFrame to Postgresql Database. <br />
+![alt text](https://github.com/pwtnew32/assignment_bigc/blob/main/image/Flow.png) <br />
 <br />
 
 ### Deployment
