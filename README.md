@@ -28,7 +28,7 @@ I choose website data for this assignment 2 websites <br />
 This workflow apply Apache Airflow by running on Docker.
 1. If your PC or Vm Instance have not installed docker, Install docker as this link : https://docs.docker.com/engine/install/  <br />
 as your system engine. If you have already installed docker, skip this step to next step<br />
-2. I have build my custom airflow image and create things as below : 
+2. I have built my custom airflow image and create things as below : 
    - Directory for project directory
    - ```Dockerfile``` to build custom image
      ```
@@ -61,4 +61,20 @@ as your system engine. If you have already installed docker, skip this step to n
      ```docker build --tag pwtnew/airflow_custom:1.1 .``` <br />  <br />
      push image to docker repo.<br />  <br />
      ```docker push pwtnew/airflow_custom:1.1```  <br />  <br />
-3. Create directory to apply as airflow project dir and download ```docker-compose.yaml``` in this repo to this directory.
+3. After push custom image to repo, download ```docker-compose.yaml```  <br />
+   download ```docker-compose.yaml```  <br />  <br />
+   ```curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.0/docker-compose.yaml'``` <br />  <br />
+   open file and change AIRFLOW_IMAGE_NAME <br />  <br />
+   ```image: ${AIRFLOW_IMAGE_NAME:-pwtnew/airflow_custom:1.1}``` <br />  <br />
+   then save file <br />  <br />
+4. Initializing Environment for Airflow (link : https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) by run all command as below : <br />  <br />
+   - In project directory, run this command to create directory and create .env
+   ```
+   mkdir -p ./dags ./logs ./plugins ./config
+   echo -e "AIRFLOW_UID=$(id -u)" > .env
+   AIRFLOW_UID=50000
+   ```
+   - Initialize the database
+   ```docker compose up airflow-init```  <br /> <br />
+5. After Initializing Environment, Running Airflow by run command  <br />
+   ```docker compose up```
