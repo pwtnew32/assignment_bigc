@@ -83,7 +83,7 @@ as your system engine. If you have already installed docker, skip this step to n
    ```docker compose up```
    
 ## Output
-In Postgresql, I create table with collect products information <br />
+In Postgresql, I create table with collect products information as below: <br />
 - category : product category such as meat, water etc.
 - product : product name.
 - brand : product brand name such as samsung.
