@@ -28,4 +28,37 @@ I choose website data for this assignment 2 websites <br />
 This workflow apply Apache Airflow by running on Docker.
 1. If your PC or Vm Instance have not installed docker, Install docker as this link : https://docs.docker.com/engine/install/  <br />
 as your system engine. If you have already installed docker, skip this step to next step<br />
-2. Create directory to apply as airflow project dir and download ```docker-compose.yaml``` in this repo to this directory.
+2. I have build my custom airflow image and create things as below : 
+   - Directory for project directory
+   - ```Dockerfile``` to build custom image
+     ```
+      # defind master image
+      # FROM apache/airflow:2.7.0
+
+      FROM apache/airflow:2.7.0
+      # copy local connector into container
+      COPY requirement.txt /requirement.txt
+      
+      # upgrade pip
+      RUN python -m pip install --upgrade pip
+      # run pip install
+      RUN pip install --requirement /requirement.txt
+     ```
+   - ```requirement.txt``` with list python libraries neeed to build custom airflow image because some python libraries were not installed in airflow image.<br />
+      ```
+      minio==7.1.10
+      pysftp==0.2.9
+      sshtunnel==0.4.0
+      xlrd==1.2.0
+      pandas==1.1.4
+      PyMySQL==1.0.2
+      paramiko==2.10.4
+      sqlalchemy==1.4.46
+      requests==2.31.0
+      bs4==0.0.2
+      ```
+      and build image by run command below.<br />  <br />
+     ```docker build --tag pwtnew/airflow_custom:1.1 .``` <br />  <br />
+     push image to docker repo.<br />  <br />
+     ```docker push pwtnew/airflow_custom:1.1```  <br />  <br />
+3. Create directory to apply as airflow project dir and download ```docker-compose.yaml``` in this repo to this directory.
