@@ -17,7 +17,7 @@ I choose website data for this assignment 2 websites <br />
 - Airflow
 - Postgresql
 
-### Workflow step
+### Workflow stept
 1. Extract Data from BigC and Makro website by using BeautifulSoup4 library to get elements of product. <br />
 2. Transform product elements to DataFrame by using pandas library. <br />
 3. Load DataFrame to Postgresql Database which running on Docker by using Sqlalchemy library.
